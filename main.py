@@ -1,5 +1,3 @@
-# 9roH}$gr - пароль от архива
-
 import datetime
 import os
 import sys
@@ -730,13 +728,6 @@ if __name__ == '__main__':
         return render_template('main.html', **param)
 
 
-    @app.route('/registering_receipts')
-    def registering_receipts_func():
-        param = {}
-        param['title'] = 'Регистрация поступления комплектующих'
-        return render_template('registering_receipts.html', **param)
-
-
     @app.route('/new_order')
     def new_order_func():
         param = {}
@@ -749,13 +740,6 @@ if __name__ == '__main__':
         param = {}
         param['title'] = 'Все заявки на сборку'
         return render_template('all_order.html', **param)
-
-
-    @app.route('/remaining')
-    def remaining_func():
-        param = {}
-        param['title'] = 'Остатки комплектующих'
-        return render_template('remaining.html', **param)
 
 
     @app.route('/storages')
