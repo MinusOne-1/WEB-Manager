@@ -16,7 +16,7 @@
     <tbody>
     {% for i in range(len_orders) %}
         <tr>
-            <th scope="row">{{i}}</th>
+            <th scope="row">{{i + 1}}</th>
             {% for j in orders[i] %}
                 <td>{{j}}</td>
             {% endfor %}
